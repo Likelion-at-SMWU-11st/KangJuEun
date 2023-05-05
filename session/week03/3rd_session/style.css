@@ -1,10 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
 
 * {
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: 'Nanum Gothic', sans-serif;
 }
 
-body, h1, h2 {
+body, h1, h2, table, p{
     margin: 8px;
     padding: 0px;
 }
@@ -20,12 +20,28 @@ h1 {
 }
 
 h2{
-    background-color: bisque;
+    background-color:antiquewhite;
     font-size: 20px;
     color: #282828;
     margin-bottom: 16px;
     border-bottom: 1px solid #ebebeb;
     padding: 5px;
+}
+
+table{
+    width: 430px;
+    height: 220px;
+    border: 1px solid #444444;
+    background-color:honeydew;
+    font-size: 15px;
+    color: #282828;
+    padding: 5px;
+    
+}
+
+th, td{
+    border: 1px solid #444444;
+    text-align: center;
 }
 
 .mainbox {
@@ -42,3 +58,4 @@ h2{
     text-align: right;
     margin-bottom: 20px;
 }
+
