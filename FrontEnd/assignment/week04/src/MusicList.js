@@ -17,7 +17,7 @@ const MusicList = () => {
 
   return (
     <div>
-      <h1>노래 리스트</h1>
+      <h1>요즘 즐겨듣는 노래 리스트</h1>
       <ul>
         {musics.map((music) => (
           <li key={music.id}>
