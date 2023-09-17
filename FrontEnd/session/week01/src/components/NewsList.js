@@ -28,13 +28,13 @@ const NewsList = ({ category }) => {
       try {
         let endpoint = "";
         if (category === "all") {
-          endpoint = `https://newsapi.org/v2/top-headlines?country=kr&apiKey=1a42460239d5425e998c257c9efbc5d3`;
+          endpoint = `https://newsapi.org/v2/top-headlines?country=kr&apiKey=***`;
         } else if (category === "apple" || category === "tesla") {
           // "애플" 또는 "테슬라" 카테고리는 해당 키워드로 원문 기사를 불러옴
-          endpoint = `https://newsapi.org/v2/everything?q=${category}&apiKey=1a42460239d5425e998c257c9efbc5d3`;
+          endpoint = `https://newsapi.org/v2/everything?q=${category}&apiKey=***`;
         } else {
           // 기존 카테고리는 한국(KR) 기사를 불러옴
-          endpoint = `https://newsapi.org/v2/top-headlines?country=kr&category=${category}&apiKey=1a42460239d5425e998c257c9efbc5d3`;
+          endpoint = `https://newsapi.org/v2/top-headlines?country=kr&category=${category}&apiKey=***`;
         }
 
         const response = await axios.get(endpoint);
